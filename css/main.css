@@ -700,6 +700,12 @@ button {
   height: 20px;
 }
 
+@media screen and (min-width: 320px) {
+  .customers {
+    display: block;
+    padding: 60px 0;
+  }
+}
 @media screen and (min-width: 480px) {
   .customers {
     display: block;
@@ -746,7 +752,7 @@ button {
 
 .customers__link {
   display: flex;
-  width: 226px;
+  width: 290px;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -758,6 +764,11 @@ button {
 .customers__link:hover, .customers__link:focus {
   color: var(--main-order-service);
   border-color: var(--main-order-service);
+}
+@media screen and (min-width: 320px) {
+  .customers__link {
+    max-width: 290px;
+  }
 }
 @media screen and (min-width: 480px) {
   .customers__link {
@@ -1147,6 +1158,11 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
 }
 @media screen and (min-width: 480px) {
   .container {
