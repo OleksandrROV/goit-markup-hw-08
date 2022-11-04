@@ -26,6 +26,7 @@ a {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -391,27 +392,57 @@ button {
 
 .hero {
   margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-backraund.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-mob.jpg);
   background-color: var(--main-background);
   text-align: center;
-  padding: 200px 0px;
-  width: 1600px;
-  height: 600px;
+  padding: 118px 0px;
+  max-width: 768px;
+  max-height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 1200px;
+    max-height: 400px;
+    padding: 200px 0px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-tab.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    max-height: 600px;
+    padding: 200px 0px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img-backraund.jpg);
+  }
 }
 
 .hero__title {
   font-family: "Roboto";
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.615;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+    height: 84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    height: 120px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__btn {
@@ -440,23 +471,42 @@ button {
 }
 
 .features {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .features {
+    padding: 94px 0;
+  }
 }
 
 .features__list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .features__list {
+    flex-wrap: nowrap;
+  }
 }
 
 .features__item {
-  width: 270px;
+  width: 100%;
 }
-.features__list .features__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: calc((100% - 30px) / 4);
+  }
 }
 
 .features__logo {
-  width: 270px;
+  width: 100%;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -485,6 +535,21 @@ button {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .section {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px), (max-width: 768px) {
+  .section {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    display: block;
+  }
 }
 
 .work {
@@ -532,22 +597,48 @@ button {
 
 .team {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--main-link-color);
   margin-bottom: 50px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
 
 .team__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    max-width: 270px;
+    width: calc((100% - 30px) / 4);
+  }
 }
 
 .team__discription {
@@ -559,9 +650,6 @@ button {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-.team__list .team__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .team__item--title {
@@ -612,33 +700,60 @@ button {
   height: 20px;
 }
 
-.customers {
-  padding: 94px 0;
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .customers {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers {
+    display: block;
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers {
+    display: block;
+    padding: 94px 0;
+  }
 }
 
 .customers__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
 
 .customers__logo {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .customers__logo {
+    flex-wrap: nowrap;
+    width: calc((100% - 30px) / 6);
+    margin-top: 50px;
+  }
 }
 
 .customers__link {
   display: flex;
-  width: 170px;
-  height: 92px;
+  width: 226px;
+  min-height: 92px;
   justify-content: center;
   align-items: center;
   color: #afb1b8;
@@ -649,6 +764,11 @@ button {
 .customers__link:hover, .customers__link:focus {
   color: var(--main-order-service);
   border-color: var(--main-order-service);
+}
+@media screen and (min-width: 1200px) {
+  .customers__link {
+    width: 170px;
+  }
 }
 
 .costomers__img {
@@ -1019,9 +1139,25 @@ body {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .list-styles {
