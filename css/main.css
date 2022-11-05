@@ -316,11 +316,29 @@ button {
   display: block;
   font-family: var(--raleway);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-order-service);
   text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+  .header__logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header__studio {
@@ -331,8 +349,30 @@ button {
 .header__list {
   list-style-type: none;
   align-items: center;
+  flex-wrap: wrap;
   display: flex;
-  margin-left: 93px;
+}
+@media screen and (min-width: 320px) {
+  .header__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: flex;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__list {
+    display: flex;
+    margin-left: 93px;
+  }
 }
 
 .header__list .header__item:not(:last-child) {
@@ -376,6 +416,27 @@ button {
   display: flex;
   margin-left: auto;
 }
+@media screen and (min-width: 320px) {
+  .header__contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header__contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__contact {
+    max-height: 80px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    display: flex;
+  }
+}
 
 .header__img--logo {
   margin-right: 10px;
@@ -383,11 +444,22 @@ button {
 
 .header__mail,
 .header__tel {
+  height: 14px;
   color: var(--main-text-color);
 }
 
-.header__contact .header__contact--link:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) {
+  .header__contact .header__contact--link:not(:last-child) {
+    height: 14px;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contact .header__contact--link:not(:last-child) {
+    display: flex;
+    margin-right: 50px;
+  }
 }
 
 .hero {
@@ -405,7 +477,7 @@ button {
   .hero {
     max-width: 1200px;
     max-height: 400px;
-    padding: 200px 0px;
+    padding: 118px 0px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-tab.jpg);
   }
 }
