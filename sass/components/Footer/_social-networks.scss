@@ -1,5 +1,11 @@
 .footer-container-icon {
-  margin-left: 70px;
+
+
+  @media screen and(min-width: 768px) {}
+
+  @media screen and(min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 
 .footer-list-icon {
@@ -7,15 +13,41 @@
   justify-content: center;
   margin-top: 20px;
   gap: 10px;
+
+  @media screen and(min-width: 320px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and(min-width: 480px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and(min-width: 768px) {}
+
+  @media screen and(min-width: 1200px) {}
 }
 
 .footer-title-icon {
+  display: flex;
+
   color: var(--main-title-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and(min-width: 320px) {
+    justify-content: center;
+  }
+
+  @media screen and(min-width: 480px) {
+    justify-content: center;
+  }
+
+  @media screen and(min-width: 768px) {}
+
+  @media screen and(min-width: 1200px) {}
 }
 
 .footer-address-icon {
@@ -35,6 +67,18 @@
   &:focus {
     background: #2196f3;
   }
+
+  @media screen and(min-width: 320px) {
+    justify-content: center;
+  }
+
+  @media screen and(min-width: 480px) {
+    justify-content: center;
+  }
+
+  @media screen and(min-width: 768px) {}
+
+  @media screen and(min-width: 1200px) {}
 }
 
 .footer-icon {
