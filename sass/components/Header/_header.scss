@@ -216,6 +216,12 @@
     justify-content: space-between;
     overflow: auto;
   }
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
 }
 
 .mob-menu__container {
@@ -266,8 +272,6 @@
   color: #212121;
 
 }
-
-.current {}
 
 .mob-menu__contact--tel {
   margin-top: 50px;

@@ -42,10 +42,6 @@ button {
   border-radius: 4px;
 }
 
-.is-hidden {
-  display: none;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -57,14 +53,13 @@ button {
   opacity: 1;
   transition: opacity var(--transition-timing) var(--cubic), visibility var(--transition-timing) var(--cubic);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
 
-.modal {
+.backdrop .modal {
   width: 528px;
   height: 581px;
   background-color: #ffffff;
@@ -523,6 +518,11 @@ button {
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
+}
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .mob-menu__container {
