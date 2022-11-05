@@ -178,6 +178,11 @@
   transition: var(--cubic) var(--transition-timing);
 }
 
+.menu-close:hover,
+.menu-close:focus {
+  fill: #2196F3;
+}
+
 .menu-open:hover,
 .menu-open:focus {
   fill: #2196F3;
