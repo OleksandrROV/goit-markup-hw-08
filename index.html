@@ -43,12 +43,72 @@
           <li class="header__contact--link">
             <a class="header__tel header__link link-text" href="tel:+380961111111">
               <svg class="header__img--logo costomers__img" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-tel"></use>
+                <use href="./images/symbol-defs.svg#icon-tel" width="40"></use>
               </svg>
               +38 096 111 11 11</a>
           </li>
         </ul>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-open">
+            <use href="./images/symbol-defs.svg#icon-menu" width="40" height="40"></use>
+          </svg>
+        </button>
       </section>
+    </div>
+    <div class="mob-menu is-hidden" data-menu>
+      <div class="mob-menu__container">
+        <div class="mob-menu__buttom">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close">
+              <use href="./images/symbol-defs.svg#icon-menu-close" width="40" height="40px"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu__list list-styles">
+            <li class="mob-menu__item"><a class="mob-menu__link link-text current" href="./index.html">Студія</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link-text" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mob-menu__item"><a class="mob-menu__link link-text" href="">Контакти</a></li>
+          </ul>
+        </div>
+        <div class="mob-menu__top">
+          <ul class="mob-menu__contact list-styles">
+            <li class="mob-menu__contact--tel">
+              <a class="mob-menu__tel mob-menu__link link-text" href="tel:+380961111111">
+                +38 096 111 11 11</a>
+            </li>
+            <li class="mob-menu__contact--mail">
+              <a class="mob-menu__mail mob-menu__link link-text" href="mailto:info@devstudio.com">
+                info@devstudio.com</a>
+            </li>
+          </ul>
+          <div class="mob-container-icon">
+            <ul class="mob-list-icon">
+              <li class="mob-link-icon">
+                <a href="" class="mob-address-icon">
+                  instagram
+                </a>
+              </li>
+              <li class="mob-link-icon">
+                <a href="" class="mob-address-icon">
+                  twitter
+                </a>
+              </li>
+              <li class="mob-link-icon">
+                <a href="" class="mob-address-icon">
+                  facebook
+                </a>
+              </li>
+              <li class="mob-link-icon">
+                <a href="" class="mob-address-icon">
+                  linkedin
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
   <!------------------------------------секція 1------------------------------------>
@@ -423,7 +483,7 @@
     </div>
   </footer> -->
   <!----------------------------------------------------------Модельне вікно--------------------------------------------->
-  <!-- <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="model-tap" data-modal-close>
         <svg class="tap-modal-close" width="11" height="11" viewBox="0 0 11 11" fill="none"
@@ -482,8 +542,9 @@
         </div>
       </form>
     </div>
-  </div> -->
+  </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
