@@ -18,8 +18,8 @@
 }
 
 .backdrop .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   position: absolute;
   padding: 17px 17px;
@@ -27,6 +27,12 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
+
+  @media screen and(min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+
+  }
 }
 
 .model-tap {
@@ -62,12 +68,26 @@
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 
   color: var(--main-subtitle-color);
+
+  @media screen and(min-width: 320px) {}
+
+  @media screen and(min-width: 480px) {}
+
+  @media screen and(min-width: 768px) {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 
 .modal-input {
@@ -206,23 +226,33 @@
 .privacy-text-link {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
 
   letter-spacing: 0.03em;
 
   color: #757575;
   margin-top: 3px;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .privacy-link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
   margin-left: 5px;
   letter-spacing: 0.03em;
   color: var(--main-order-service);
   text-underline-offset: 0.25em;
   text-decoration: underline;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .modal-btn-container {
