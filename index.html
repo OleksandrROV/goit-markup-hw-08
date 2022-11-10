@@ -176,7 +176,13 @@
         <ul class="we-do-list">
           <li class="we-do-photo list-styles">
             <div class="work-photo">
-              <img src="./images/box1.jpg" alt="програмування" width="370" height="294" />
+              <picture>
+                <source srcset="
+                            ./images/box1-1x.jpg
+                            ./images/box1-2x.jpg
+                            " media="(max-width:1200px)">
+                <img src="./images/box1.jpg" alt="програмування" width="370" height="294" />
+              </picture>
               <p class="work-text">
                 Десктопні додатки
               </p>
@@ -184,14 +190,26 @@
           </li>
           <li class="we-do-photo list-styles">
             <div class="work-photo">
-              <img src="./images/box2.jpg" alt="програмування" width="370" height="294" />
+              <picture>
+                <source srcset="
+                            ./images/box2-1x.jpg
+                            ./images/box2-2x.jpg
+                            " media="(max-width:1200px)">
+                <img src="./images/box2.jpg" alt="програмування" width="370" height="294" />
+              </picture>
               <p class="work-text">
                 Мобільні додатки
               </p>
           </li>
           <li class="we-do-photo list-styles">
             <div class="work-photo">
-              <img src="./images/box3.jpg" alt="програмування" width="370" height="294" />
+              <picture>
+                <source srcset="
+                            ./images/box3-1x.jpg
+                            ./images/box3-2x.jpg
+                            " media="(max-width:1200px)">
+                <img src="./images/box3.jpg" alt="програмування" width="370" height="294" />
+              </picture>
               <p class="work-text">
                 Дизайнерські рішення
               </p>
@@ -205,8 +223,22 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list list-styles">
           <li class="team__item">
-            <img src="./images/komanda/igor.jpg" alt="Дезайнер" min-width="270" />
-            <div class="team__discription">
+            <picture>
+              <source srcset="
+              ./images/komanda/desktop/igor-1x.jpg,
+              ./images/komanda/desktop/igor-2x.jpg
+              " media="(max-width:1200px)" />
+              <source srcset="
+              ./images/komanda/tab1-2x/igor-tab-1x.jpg,
+              ./images/komanda/tab1-2x/igor-tab-2x.jpg
+              " media="(max-width:768px)" />
+              <source srcset="
+              ./images/komanda/mob1-2x/igor-mob-1x.jpg,
+              ./images/komanda/mob1-2x/igor-mob-2x.jpg
+              " media="(max-width:480px)" />
+              <img src="./images/komanda/igor.jpg" alt="Дезайнер" width="450" />
+            </picture>
+            <div class=" team__discription">
               <h3 class="team__item--title">Ігор Дем'яненко</h3>
               <p class="team__text" lang="en">Product Designer</p>
               <ul class="team__list--icon">
@@ -242,7 +274,21 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/komanda/olga.jpg" alt="Фротент розробник" min-width="270" />
+            <picture>
+              <source srcset="
+                ./images/komanda/desktop/olga-1x.jpg,
+                ./images/komanda/desktop/olga-2x.jpg
+                " media="(max-width:1200px)" />
+              <source srcset="
+                ./images/komanda/tab1-2x/olga-tab-1x.jpg,
+                ./images/komanda/tab1-2x/olga-tab-2x.jpg
+                " media="(max-width:768px)" />
+              <source srcset="
+                ./images/komanda/mob1-2x/olga-mob-1x.jpg,
+                ./images/komanda/mob1-2x/olga-mob-2x.jpg
+                " media="(max-width:480px)" />
+              <img src="./images/komanda/olga.jpg" alt="Фротент розробник" width="450" />
+            </picture>
             <div class="team__discription">
               <h3 class="team__item--title">Ольга Рєпіна</h3>
               <p class="team__text" lang="en">Frontend Developer</p>
@@ -279,7 +325,21 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/komanda/mykola.jpg" alt="Маркетолог" min-width="270" />
+            <picture>
+              <source srcset="
+                ./images/komanda/desktop/mykola-1x.jpg,
+                ./images/komanda/desktop/mykola-2x.jpg
+                " media="(max-width:1200px)" />
+              <source srcset="
+                ./images/komanda/tab1-2x/mykola-tab-1x.jpg,
+                ./images/komanda/tab1-2x/mykola-tab-2x.jpg
+                " media="(max-width:768px)" />
+              <source srcset="
+                ./images/komanda/mob1-2x/mykola-mob-1x.jpg,
+                ./images/komanda/mob1-2x/mykola-mob-2x.jpg
+                " media="(max-width:480px)" />
+              <img src="./images/komanda/mykola.jpg" alt="Маркетолог" width="450" />
+            </picture>
             <div class="team__discription">
               <h3 class="team__item--title">Микола Тарасов</h3>
               <p class="team__text" lang="en">Marketing</p>
@@ -316,7 +376,21 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/komanda/myxailo.jpg" alt="Юл Дезайнер" min-width="270" />
+            <picture>
+              <source srcset="
+                ./images/komanda/desktop/myxailo-1x.jpg,
+                ./images/komanda/desktop/myxailo-2x.jpg
+                " media="(max-width:1200px)" />
+              <source srcset="
+                ./images/komanda/tab1-2x/myxailo-tab-1x.jpg,
+                ./images/komanda/tab1-2x/myxailo-tab-2x.jpg
+                " media="(max-width:768px)" />
+              <source srcset="
+                ./images/komanda/mob1-2x/myxailo-mob-1x.jpg,
+                ./images/komanda/mob1-2x/myxailo-mob-2x.jpg
+                " media="(max-width:480px)" />
+              <img src="./images/komanda/myxailo.jpg" alt="Юл Дезайнер" width="450" />
+            </picture>
             <div class="team__discription">
               <h3 class="team__item--title">Михайло Єрмаков</h3>
               <p class="team__text" lang="en">UI Designer</p>
