@@ -60,8 +60,8 @@ button {
 }
 
 .backdrop .modal {
-  width: 450px;
-  height: 609px;
+  width: 310px;
+  height: 610px;
   background-color: #ffffff;
   position: absolute;
   padding: 17px 17px;
@@ -69,6 +69,12 @@ button {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .backdrop .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .backdrop .modal {
@@ -446,6 +452,10 @@ button {
   color: #212121;
 }
 
+.mob-current {
+  color: #2196f3;
+}
+
 .mob-menu__contact--tel {
   margin-top: 50px;
 }
@@ -475,12 +485,16 @@ button {
 }
 
 .mob-list-icon {
+  flex-wrap: wrap;
+  row-gap: 10px;
   display: flex;
   margin-top: 64px;
 }
 
 .mob-link-icon:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob-address-icon {
@@ -787,12 +801,24 @@ button {
 }
 
 .futures__title {
+  display: flex;
+  justify-content: center;
   color: var(--main-link-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .futures__title {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .futures__title {
+    display: block;
+  }
 }
 
 .futures__text {
@@ -1012,6 +1038,7 @@ button {
 .customers__logo {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   margin-top: 30px;
@@ -1340,6 +1367,17 @@ button {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer-list-icon {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-list-icon {
+    margin-bottom: 0;
+  }
+}
+
 .footer-title-icon {
   display: flex;
   color: var(--main-title-color);
@@ -1377,7 +1415,7 @@ button {
 
 .footer-news-email input {
   padding: 15px;
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1397,6 +1435,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .footer-news-email {
+    width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1547,11 +1586,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-@media screen and (min-width: 320px) {
-  .container {
-    width: 320px;
-  }
 }
 @media screen and (min-width: 480px) {
   .container {

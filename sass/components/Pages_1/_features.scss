@@ -46,12 +46,23 @@
 }
 
 .futures__title {
+  display: flex;
+  justify-content: center;
   color: var(--main-link-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and(min-width: 768px) {
+    display: block;
+  }
+
+  @media screen and(min-width: 1200px) {
+    display: block;
+
+  }
 }
 
 .futures__text {

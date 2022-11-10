@@ -18,8 +18,8 @@
 }
 
 .backdrop .modal {
-  width: 450px;
-  height: 609px;
+  width: 310px;
+  height: 610px;
   background-color: #ffffff;
   position: absolute;
   padding: 17px 17px;
@@ -27,6 +27,12 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
+
+    @media screen and(min-width: 480px) {
+        width: 450px;
+        height: 609px;
+    
+      }
 
   @media screen and(min-width: 1200px) {
     width: 528px;
