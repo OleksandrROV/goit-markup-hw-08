@@ -18,6 +18,7 @@
       url(../images/img-mob-2x.jpg);
   }
 
+
   @media screen and(min-width:768px) {
     max-width: 1200px;
     max-height: 400px;
@@ -38,7 +39,7 @@
     max-height: 600px;
     padding: 200px 0px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../../../images/img-backraund.jpg);
+      url(../images/img-backraund.jpg);
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -47,58 +48,59 @@
         url(../images/img-backraund-2x.jpg);
     }
   }
+}
 
-  .hero__title {
-    font-family: 'Roboto';
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.615;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--main-title-color);
-    max-width: 696px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+.hero__title {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 
-    @media screen and(min-width:768px) {
-      width: 360px;
-      height: 84px;
-    }
-
-    @media screen and(min-width:1200px) {
-      width: 696px;
-      height: 120px;
-      font-size: 44px;
-      line-height: 1.36;
-    }
+  @media screen and(min-width:768px) {
+    width: 360px;
+    height: 84px;
   }
 
-  .hero__btn {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--main-title-color);
-    cursor: pointer;
-    background: #2196f3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    display: block;
-
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 32px;
-    max-height: 50px;
-    border: none;
-    border-radius: 4px;
-
-    transition: color var(--cubic) var(--transition-timing),
-      background-color var(--cubic) var(--transition-timing);
-
-    &:hover,
-    &:focus {
-      background-color: #188ce8;
-    }
+  @media screen and(min-width:1200px) {
+    width: 696px;
+    height: 120px;
+    font-size: 44px;
+    line-height: 1.36;
   }
+}
+
+.hero__btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-title-color);
+  cursor: pointer;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  max-height: 50px;
+  border: none;
+  border-radius: 4px;
+
+  transition: color var(--cubic) var(--transition-timing),
+    background-color var(--cubic) var(--transition-timing);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
