@@ -1114,7 +1114,12 @@ button {
   list-style-type: none;
   display: flex;
   margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .navi-list {
+    justify-content: center;
+  }
 }
 
 .list-btn {
@@ -1122,8 +1127,13 @@ button {
 }
 .navi-list .list-btn:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
-
+@media screen and (min-width: 768px) {
+  .navi-list .list-btn:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
 .navi-btn {
   font-family: "Roboto";
   font-weight: 500;
@@ -1171,7 +1181,17 @@ button {
 }
 
 .portfolio-project {
-  width: 370px;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-project {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-project {
+    width: 370px;
+  }
 }
 
 .portfolio-project:hover .portfolio-project .portfolio-link {
