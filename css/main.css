@@ -1113,12 +1113,14 @@ button {
 .navi-list {
   list-style-type: none;
   display: flex;
+  margin-right: 12px;
   margin-bottom: 50px;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .navi-list {
     justify-content: center;
+    margin-right: 0;
   }
 }
 
